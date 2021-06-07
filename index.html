@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5c9060fec4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">    
+    <title>My Music Player</title>
+</head>
+<body>
+    <div id="main">
+        <div id="player">
+            <div class="dashboard">
+                <!-- Dashboard heading -->
+                <div class="dashboard__heading">
+                    <div class="dashboard__heading-return">
+                        <i class="dashboard__heading-return-icon fas fa-chevron-left"></i>
+                    </div>
+                    <h3 class="dashboard__heading-status">
+                        Now playing
+                    </h3>
+                    <div class="dashboard__heading-menu">
+                        <i class="dashboard__heading-menu-icon fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+
+                <!-- Dashboard Song Image -->
+                <div class="dashboard__image" style="background-image: url(./assets/img/Vice-tone_Nevada.jpg);"></div>
+
+                <!-- Dashboard Song Info -->
+                <div class="dashboard__info">
+                    <h3 class="dashboard__info-name">Vicetone (ft.audio)</h3>
+                    <p class="dashboard__info-singer">Nevada</p>
+                </div>
+            </div>
+            <div class="play-wrap">
+                <!-- Progress section -->
+                <div class="play__progress">
+                    <div class="play__progress-time">
+                        <span class="play__progress-time-current"></span>
+                        <span class="play__progress-time-end"></span>
+                    </div>
+                    <input id="progress" type="range" value="0" step="1" min="0" max="100">
+                </div>
+
+                <!-- Buttons section -->
+                <div class="play__control">
+                    <!-- Random btn -->
+                    <div class="play__control-random">
+                        <i class="play__control-random-btn fas fa-random"></i>
+                    </div>  
+
+                    <!-- Play/Pause btn -->
+                    <div class="play__control-rewind">
+                        <div class="play__rewind play__rewind-prev">
+                            <i class="fas fa-caret-left"></i>
+                        </div>
+                        <div class="play__control-toggle-play">
+                            <i class="play-btn fas fa-play"></i>
+                            <i class="pause-btn fas fa-pause"></i>
+                        </div>
+                        <div class="play__rewind play__rewind-next">
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </div>
+                    <!-- Repeat btn --> 
+                    <div class="play__control-repeat">
+                        <i class="play__control-repeat-btn fas fa-redo"></i>
+                    </div>
+                </div>
+
+                <!-- Song list section -->
+                <div class="play__list">
+                    <div class="play__list-up">
+                        <i class="play__list-up-icon fas fa-chevron-up"></i>
+                    </div>
+                    <div class="play__list-content">
+                        <h4 class="play__list-content-text">SONGS</h4>
+                    </div>
+                </div>
+                <audio id="audio" src="" preload="metadata"></audio>
+            </div>  
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

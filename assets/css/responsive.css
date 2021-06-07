@@ -1,0 +1,24 @@
+/* Mobile */
+@media (max-width: 739px) {
+    #player {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .dashboard {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .play-wrap {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+/* Specify for Iphone 5 */
+@media (max-width: 330px) {
+    .dashboard__image {
+        padding-top: 35%;
+        width: 35%;
+    }
+}
